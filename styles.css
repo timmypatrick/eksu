@@ -1,0 +1,1041 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: sans-serif;
+	color: rgba(0, 0, 0, 0.9);
+	text-align: justify ;
+}
+
+body.transform{
+	background-color: #2f4f4f;
+}
+
+header{
+	background-color: blueviolet;
+	display: flex;
+	justify-content: space-between;
+	padding: 1em;
+	z-index: 1;
+	position: absolute;
+	width: 100%;
+}
+
+header > section, header > img{
+	display: none;
+}
+
+header > h3{
+	text-align: center;
+	color: rgb(245, 222, 179);
+	font-family: monospace;
+	font-size: 1.5em;
+}
+
+header div > img{
+	width: 45px;
+	pointer-events: none;
+}
+
+header > aside{
+	width: auto;
+	height: 20px;
+	cursor: pointer;
+	
+}
+
+header > aside div{
+	background-color: snow;
+	width: 25px;
+	height: 3px;
+	border-radius: 5px;
+}
+
+header > aside div:not(:last-child){
+	margin-bottom: 4px;
+}
+
+nav{
+	width: 0%;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #008000;
+	z-index: 2;
+	overflow-x: auto;
+	transition: .5s;
+}
+
+nav > header{
+	z-index: 2;
+}
+
+nav > header > div{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+nav > header > div > div{
+	color: wheat;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-size: 1.1em;
+	text-align: center;
+	font-weight: bold;
+}
+
+nav > div i{
+	color: wheat;
+	float: right;
+	z-index: 5;
+	position: absolute;
+	top: 15px;
+	right: 20px;
+}
+
+div.close_icon{
+	cursor: pointer;
+}
+
+nav ul > li i{
+	color: wheat;
+	margin: 0 20px 0 -30px;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 120px 0 0 50px ;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+nav ul > li > a{
+	text-decoration: none;
+	color: #ccc;
+	font-size: 1.3em;
+	font-family: century;
+}
+
+nav ul > li:not(:last-child){
+	margin-bottom: 10px;
+}
+
+nav ul > li:last-child{
+	color: #ccc;
+}
+
+#toggle{
+	display: none;
+}
+
+nav label{
+	font-size: 1.3em;
+	font-family: century;
+	transition: color .2s;
+	cursor: pointer;
+}
+
+h3#animation{
+	text-align: center;
+	color: wheat;
+	font-family: monospace;
+	font-size: 2em;
+	position: absolute;
+	width: 90%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1;
+}
+
+
+/*   Background Image Gallery Begins  */
+.albomm{
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	overflow: hidden;
+	top: 0;
+}
+
+.image_holderr{
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	opacity: 0;
+}
+
+#img1{
+	background-image: url('img1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#img2{
+	background-image: url('img2.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#img3{
+	background-image: url('img3.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.albomm div > aside{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .7);
+}
+
+@media only screen and (min-width : 1000px){
+	#img1{
+		background-position-y: -200px;
+	}
+
+	#img2{
+		background-position-y: -120px;
+	}
+
+	#img3{
+		background-position-y: -200px;
+	}
+
+	#img4{
+		background-position-y: -100px;
+	}
+
+	#img5{
+		background-position-y: -250px;
+	}
+}
+
+/* This moves current slide to the left */
+
+.present_slide_go_leftt{
+	animation-name: present_go_leftt;
+	animation-duration: 0.7s;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+}
+
+@keyframes present_go_leftt{
+	from{
+		opacity: 1;
+		margin-left: 0;
+	}
+
+	to{
+		opacity: 1;
+		margin-left: -100%;
+	}
+}
+
+/* This brings next slide to the left */
+
+.future_slide_come_leftt{
+	animation-name: future_come_leftt;
+	animation-duration: .7s;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+}
+
+@keyframes future_come_leftt{
+	from{
+		opacity: 1;
+		margin-left: 100%;
+	}
+
+	to{
+		opacity: 1;
+		margin-left: 0%;
+	}
+}
+
+
+
+/*   Important Personnel*/
+main{
+	max-width: 1000px;
+	margin: 0px auto;
+}
+
+#personel, article, .matriculation, #stu_aff, #gall_cont{
+	box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.3);
+	width: 90%;
+	margin: 20px auto;
+	padding: 10px;
+}
+
+#ip{
+	margin: 20px auto;
+}
+
+h3#ip{
+	text-align: center;
+}
+
+img{
+	width: 100%;	
+}
+
+div.img-container{
+	text-align: center;
+}
+
+div.img-container > img{
+	width: 200px;
+	border-radius: 10px;
+}
+
+div.dr{
+	font-size: 1.1em;
+	font-weight: bold;
+	
+}
+
+.other_off{
+	text-align: center;
+}
+
+article.comp > div {
+	text-indent: 20px;
+}
+
+span.big_c{
+	font-size: 2.5em;
+	font-family: century;
+}
+
+h2#python{
+	font-family: sans-serif Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	text-align: center;
+	color: hsl(271, 76%, 53%);
+}
+
+body.transform h2#python{
+	color: rgb(245, 222, 179);
+}
+
+#ip > h2.mat{
+	text-align: center;
+}
+
+b > .big_c{
+	font-family: sans-serif;
+}
+
+/*  Matriculation Animation Begins */
+
+#gallery{
+	width: 90%;
+	height: 70vh;
+	background-color: limegreen;
+	max-width: 500px;
+	margin: 5% auto 0;
+	position: relative;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.albom{
+	position: relative;
+	width: 100%;
+	height: 90%;
+	overflow: hidden;
+}
+
+#play_pause{
+	position: absolute;
+	background-image: url('img6.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 30px;
+	height: 30px;
+	top: 5%;
+	left: 5%;
+	z-index: 1;
+	cursor: pointer;
+}
+
+.caption_holder{
+	position: absolute;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, .7);
+	width: 100%;
+	height: 15%;
+	z-index: 1;
+}
+
+p#caption_text{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+	font-size: 17px;
+	width: 100%;
+	text-align: center;
+}
+
+.image_holder{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+}
+
+.text{
+	opacity: 0;
+}
+
+#gallery span{
+	width: 17px;
+	height: 17px;
+	background-color: #818181;
+	border-radius: 50%;
+	display: inline-block;
+	cursor: pointer
+}
+
+#gallery span.active{
+	background-color: midnightblue;
+}
+
+#gallery span:not(:first-child){
+	margin-left: 7px;
+}
+
+#dot-wrapper{
+	text-align: center;
+	margin: 5% auto;
+}
+
+/* This moves current slide to the left */
+
+.present_slide_go_left{
+	animation-name: present_go_left;
+	animation-duration: .5s;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+}
+
+@keyframes present_go_left{
+	from{
+		opacity: 1;
+		margin-left: 0;
+	}
+
+	to{
+		opacity: 1;
+		margin-left: -100%;
+	}
+}
+
+/* This brings next slide to the left */
+
+.future_slide_come_left{
+	animation-name: future_come_left;
+	animation-duration: .5s;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+}
+
+@keyframes future_come_left{
+	from{
+		opacity: 1;
+		margin-left: 100%;
+	}
+
+	to{
+		opacity: 1;
+		margin-left: 0%;
+	}
+}
+
+/* This moves current slide to the right */
+
+.present_slide_go_right{
+	animation-name: present_go_right;
+	animation-duration: .5s;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+}
+
+@keyframes present_go_right{
+	from{
+		opacity: 1;
+		margin-left: 0%;
+	}
+
+	to{
+		opacity: 1;
+		margin-left: 100%;
+	}
+}
+
+/* This brings next slide to the right */
+
+.future_slide_come_right{
+	animation-name: future_come_right;
+	animation-duration: .5s;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+}
+
+@keyframes future_come_right{
+	from{
+		opacity: 1;
+		margin-left: -100%;
+	}
+
+	to{
+		opacity: 1;
+		margin-left: 0%;
+	}
+}
+
+/*  Caption Text Animation */
+
+.animate{
+	animation-name: to_animate;
+	animation-duration: 1.3s;
+}
+
+@keyframes to_animate{
+	from{
+		opacity: 0;
+		margin-top: -18px;
+	}
+
+	to{
+		margin-top: 0;
+		opacity: 1;
+	}
+}
+
+@media only screen and (min-width : 700px){
+	p#caption_text{
+		font-size: 22px;
+	}
+
+	#dot-wrapper span:hover{
+	background-color: midnightblue;
+	}
+}
+
+/*  Matriculation Animation Ends */
+
+h4#ip{
+	text-align: center;
+}
+
+.urgent_info{
+	margin: 20px;
+	font-size: 20px;
+	font-weight: bold;
+	color: blueviolet;
+}
+
+body.transform .change_color{
+	color: rgb(245, 222, 179);
+}
+
+
+img#stu-aff-img{
+	border: none;
+}
+
+/*  Gallery Begins */
+
+#gallery2{
+	width: 100%;
+	height: 70vh;
+	background-color: limegreen;
+	max-width: 500px;
+	margin: 5% auto 0;
+	position: relative;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.albom2{
+	position: relative;
+	width: 100%;
+	height: 90%;
+	overflow: hidden;
+}
+
+#play_pause2{
+	position: absolute;
+	background-image: url('img6.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 30px;
+	height: 30px;
+	top: 5%;
+	left: 5%;
+	z-index: 1;
+	cursor: pointer;
+}
+
+.caption_holder2{
+	position: absolute;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, .7);
+	width: 100%;
+	height: 15%;
+	z-index: 1;
+}
+
+p#caption_text2{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+	font-size: 17px;
+	width: 100%;
+	text-align: center;
+}
+
+.image_holder2{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+}
+
+.text2{
+	opacity: 0;
+}
+
+#gallery2 span{
+	width: 17px;
+	height: 17px;
+	background-color: white;
+	border-radius: 50%;
+	display: inline-block;
+	cursor: pointer
+}
+
+#gallery2 span.active2{
+	background-color: blueviolet;
+}
+
+#gallery2 span:not(:first-child){
+	margin-left: 7px;
+}
+
+#dot-wrapper2{
+	text-align: center;
+	margin: 5% auto;
+}
+
+#left{
+	position: absolute;
+	top: 45%;
+	left: 7%;
+	z-index: 2;
+	color: white;
+	background-color: blueviolet;
+	padding: 15px;
+	border-radius: 30px;
+	cursor: pointer;
+}
+
+#right{
+	position: absolute;
+	top: 45%;
+	right: 7%;
+	z-index: 2;
+	color: white;
+	background-color: blueviolet;
+	padding: 15px;
+	border-radius: 30px;
+	cursor: pointer;
+}
+
+/* This moves current slide to the left */
+
+.present_slide_go_left2{
+	animation-name: present_go_left2;
+	animation-duration: .5s;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+}
+
+@keyframes present_go_left2{
+	from{
+		opacity: 1;
+		margin-left: 0;
+	}
+
+	to{
+		opacity: 1;
+		margin-left: -100%;
+	}
+}
+
+/* This brings next slide to the left */
+
+.future_slide_come_left2{
+	animation-name: future_come_left2;
+	animation-duration: .5s;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+}
+
+@keyframes future_come_left2{
+	from{
+		opacity: 1;
+		margin-left: 100%;
+	}
+
+	to{
+		opacity: 1;
+		margin-left: 0%;
+	}
+}
+
+/* This moves current slide to the right */
+
+.present_slide_go_right2{
+	animation-name: present_go_right2;
+	animation-duration: .5s;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+}
+
+@keyframes present_go_right2{
+	from{
+		opacity: 1;
+		margin-left: 0%;
+	}
+
+	to{
+		opacity: 1;
+		margin-left: 100%;
+	}
+}
+
+/* This brings next slide to the right */
+
+.future_slide_come_right2{
+	animation-name: future_come_right2;
+	animation-duration: .5s;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+}
+
+@keyframes future_come_right2{
+	from{
+		opacity: 1;
+		margin-left: -100%;
+	}
+
+	to{
+		opacity: 1;
+		margin-left: 0%;
+	}
+}
+
+/*  Caption Text Animation */
+
+.animate2{
+	animation-name: to_animate2;
+	animation-duration: 1.3s;
+}
+
+@keyframes to_animate2{
+	from{
+		opacity: 0;
+		margin-top: -18px;
+	}
+
+	to{
+		margin-top: 0;
+		opacity: 1;
+	}
+}
+
+@media only screen and (min-width : 700px){
+	p#caption_text2{
+		font-size: 22px;
+	}
+
+	#dot-wrapper2 span:hover{
+	background-color: midnightblue;
+	}
+}
+
+/*  Gallery Ends */
+
+/*   CONTACT   */
+
+
+body.transform #contact > h2{
+	color: #f5deb3;
+}
+
+body.transform section#contact > h2{
+	background-color: darkslategrey;
+}
+
+form > div{
+	background-image: url("tim.jpg");
+	background-size: 400px;
+	background-attachment: fixed;
+}
+
+form > div > div{
+	background-color: rgba(138, 43, 226, 0.6);
+}
+
+form > div > div div{
+	padding: 20px;
+}
+
+form > div h3{
+	background-color: blueviolet;
+	color: #ffffff;
+	text-align: center;
+	margin: 50px 0 30px;
+	padding: 15px 0;
+}
+
+form input{
+	font-size: 1em;
+	width: 100%;
+	border: none;
+	outline: none;
+	border-bottom: 4px solid white;
+	padding: 0 0 5px;
+	margin-bottom: 30px;
+	background-color: transparent;
+	color: white;
+}
+
+form .inputs i{
+	color: white;
+	margin: 0 0 20px 45%;
+}
+
+textarea{
+	font-size: 1.5em;
+	padding: 10px;
+	width: 100%;
+	border-radius: 10px;
+	border: none;
+	outline: none;
+}
+
+form button{
+	cursor: pointer;
+	font-size: 1.1em;
+	padding: 10px 30px;
+	border-radius: 20px;
+	outline: none;
+	background-color: blueviolet;
+	border: none;
+	color: hsl(0, 0%, 100%);
+}
+
+div.button{
+	text-align: center;
+}
+
+aside.top{
+	margin: 20px;
+	padding: 15px;
+	border-radius: 1000px;
+	color: white;
+	background-color: blueviolet;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	z-index: 2;
+}
+
+form h4{
+	text-align: center;
+	color: blueviolet;
+	background-color: white;
+	width: 150px;
+	margin: 0 auto;
+	padding: 10px 0;
+	border-radius: 20px;
+}
+
+
+.chat a i{
+	color: white ;
+}
+
+.chat > div{
+	display: flex;
+	justify-content: space-between;
+	width: 70%;
+	margin: auto;
+}
+
+footer{
+	width: 100%;
+	background-color: blueviolet;
+	margin-top: -18px;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+}
+
+footer > div{
+	padding: 20px 0;
+}
+
+footer div:last-child{
+	padding: 0 0 40px;
+}
+
+@media only screen and (min-width : 800px){
+	nav{
+		display: none;
+	}
+
+	header > section{
+	display: block;
+	text-align: center;
+	}
+
+	header > section ul li{
+		list-style-type: none;
+		display: inline;
+		color: white;
+		font-size: 100%;
+		font-weight: bold;
+		transition: .5s;
+		
+	}
+
+	header > section ul li:hover{
+		color: wheat;
+		border-bottom: 2px solid wheat;
+	}
+
+	header > section ul li:not(:last-child){
+		margin-right: 20px;
+	}
+
+	header > section ul li a{
+		color: white;
+		text-decoration: none;
+		transition: .5s;
+	}
+
+	header > section ul li > a:hover{
+		color: wheat;
+		border-bottom: 2px solid wheat;
+	}
+
+	header > aside, header > h3{
+		display: none;
+	}
+
+	header > img{
+		display: block;
+		width: 70px;
+		height: 70px;
+	}
+	
+
+	#imp_per{
+		display: flex;
+	}
+
+	.imp_per_hod{
+		order: 1;
+	}
+
+	.ip-info{
+		max-width: 500px;
+	}
+
+	article > section#art_comp{
+		margin: 0 30px;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-column-gap: 30px;
+	}
+
+	#matric_grid{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		margin: 0 30px;
+		grid-column-gap: 20px;
+	}
+
+	span.today-mat{
+		display: none;
+	}
+
+	#gallery{
+	width: 300px;
+	height: 300px;
+	background-color: gold;
+	margin: 5% auto 0;
+	position: relative;
+	padding: 10px;
+	border-radius: 10px;
+	}
+
+	section#gall_cont{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	section#contact{
+		margin-left: 20px;
+	}
+
+	.girl_caption{
+	display: flex;
+	margin: 20px;
+	}
+
+	.girl_caption div{
+	margin-left: 30px;
+	font-size: 1.1em;
+	width: 50%;
+	}
+
+	img#girl{
+	width: 50%;
+	}
+
+	form > div{
+	background-image: url("tim.jpg");
+	background-size: 200px;
+	background-attachment: fixed;
+	}
+
+}
+
+@media only screen and (min-width : 1100px){
+	.ip-info{
+		padding-left: 100px;
+		max-width: 700px;
+	}
+
+	span.today-mat{
+		display: inline;
+	}
+
+	#gallery{
+		width: 400px;
+		height: 400px;
+	}
+}

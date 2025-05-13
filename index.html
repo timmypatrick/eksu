@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Computer Science</title>
+		<link rel="stylesheet" type="text/css" href="styles.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<script src="scripts.js"></script>
+		<script src="typed.js"></script>
+	</head>
+	<body id="home">
+		<header>
+			<aside onclick="open_nav()">
+				<div></div>
+				<div></div>
+				<div></div>
+			</aside>
+			<h3>Computer Science</h3>
+			<img src="oro.png" />
+			<section>
+				<ul>
+					<li>
+						<a href="#home">Home</a>
+					</li>
+					<li>
+						<a href="#personel">Personels</a>
+					</li>
+					<li>
+						<a href="#gall_cont">Gallery</a>
+					</li>
+					<li>
+						<a href="http://www.kwcoeoro.edu.ng">College</a>
+					</li>
+					<li>
+						<a href="http://eksu.edu.ng">Main Campus</a>
+					</li>
+					<li>
+						<a href="#stu_aff">Student Affairs</a>
+					</li>
+					<li>
+						<a href="#contact">Contact</a>
+					</li>
+					<li>
+						<input type="checkbox" id="toggle" />
+						<label for="toggle">Dark Mode</label>
+					</li>
+				</ul>
+			</section>
+
+			<div><img src="eksu.png" /></div>
+		</header>
+
+		<nav id="nav_bar">
+			<header>
+				<div>
+					<img src="oro.png" />
+					<div>COMPUTER SCIENCE</div>
+					<div onclick="close_nav()" class="close_icon">
+						<i class="fa fa-reply" style="font-size: 30px"></i>
+					</div>
+				</div>
+			</header>
+
+			<br />
+			<ul>
+				<li onclick="close_nav()">
+					<i class="fa fa-home" style="font-size: 25px"> </i>
+					<a href="#home">Home</a>
+				</li>
+				<li onclick="close_nav()">
+					<i class="fa fa-group" style="font-size: 23px"> </i>
+					<a href="#personel">Personels</a>
+				</li>
+				<li onclick="close_nav()">
+					<i class="fa fa-address-book" style="font-size: 22px"> </i>
+					<a href="#gall_cont">Gallery</a>
+				</li>
+				<li>
+					<i class="fa fa-language" style="font-size: 25px"> </i>
+					<a href="http://www.kwcoeoro.edu.ng">College</a>
+				</li>
+				<li>
+					<i class="fa fa-university" style="font-size: 23px"> </i>
+					<a href="http://eksu.edu.ng">Main Campus</a>
+				</li>
+				<li onclick="close_nav()">
+					<i class="fa fa-id-card" style="font-size: 22px"> </i>
+					<a href="#stu_aff">Student Affairs</a>
+				</li>
+				<li onclick="close_nav()">
+					<i class="fa fa-tty" style="font-size: 25px"> </i>
+					<a href="#contact">Contact</a>
+				</li>
+				<li>
+					<i class="fa fa-adjust" style="font-size: 25px"> </i>
+					<input type="checkbox" id="toggle" />
+					<label for="toggle">Dark Mode</label>
+				</li>
+			</ul>
+		</nav>
+
+		<section>
+			<h3 id="animation"></h3>
+			<div class="albomm">
+				<div class="image_holderr" id="img1">
+					<aside></aside>
+				</div>
+
+				<div class="image_holderr" id="img2">
+					<aside></aside>
+				</div>
+
+				<div class="image_holderr" id="img3">
+					<aside></aside>
+				</div>
+			</div>
+		</section>
+		<main>
+			<section id="personel">
+				<h3 id="ip" class="change_color">
+					Important personnel to be observed
+				</h3>
+				<section id="imp_per">
+					<div class="img-container">
+						<img src="dr.jpg" />
+					</div>
+
+					<div id="ip" class="ip-info change_color">
+						To start with, we portray the Principal Lecturer and
+						coordinator of the department of computer science Ekiti
+						State University Oro Campus Sandwish Program in person
+						of
+						<span class="dr"> Dr T.N Madandola.</span>
+						He is also a patron in the Departmental Presidents
+						Association [DPA] KwCOED Oro as well as the Igbomina
+						Student Union [ISU] KwCOED Oro. And if you ever think of
+						an adviser as regard the Students Repesentative Council
+						[SRC] Ekiti State University Oro Campus Sandwish
+						Program, he is also in the position.
+					</div>
+				</section>
+				<br />
+
+				<section id="imp_per">
+					<div class="img-container">
+						<img src="hod.jpg" id="prog" class="hod imp_per_hod" />
+					</div>
+
+					<div id="ip" class="ip-info change_color">
+						Talking about the successor, we have the Head of the
+						crucial department, identified as
+						<span class="dr"> Mr O.Salawu.</span> He is the vice
+						chairman, College Of Education Academic Staff Union
+						[COEASU] Oro Chapter. He is known to be a man of
+						principle and concerning academic affairs, all things
+						must be appropriately done at the right time.
+					</div>
+				</section>
+
+				<br />
+
+				<section id="imp_per">
+					<div class="img-container">
+						<img src="prog1.jpg" id="prog" class="one" />
+					</div>
+
+					<div id="ip" class="ip-info change_color">
+						Another notable official to be acknowledged is the
+						prominent programmer.
+						<span class="dr">Mr Sakariyau S. N</span> known to be a
+						specialist in programming concept has been a loyal
+						computer scientist over a while. He is also the Deputy
+						Director as far as Information And Communication
+						Technology [I.C.T] is concerned.
+						<br />
+					</div>
+				</section>
+				<br />
+			</section>
+
+			<article>
+				<h2 id="python">Python Programming Language</h2>
+				<br /><br />
+				<section id="art_comp">
+					<div>
+						<img src="timpy.JPG" />
+
+						<br />
+
+						<div id="ip" class="change_color">
+							<span class="big_c">A</span>ccording to the stack
+							overflow, python is known to be the most porpular,
+							versatile and expressive programming language as it
+							contributes greatly to the development of the
+							civilized world today.
+						</div>
+					</div>
+
+					<div>
+						<img src="ai.jpg" />
+
+						<br />
+
+						<div id="ip" class="change_color">
+							<b>Artificial Intelligence</b> is key while talking
+							about python programming language. Have you ever
+							thought of Google as a software technology, just
+							imagine the way you inquire anything and it replies
+							rapidly even with voice notes if indicated. This
+							demonstrates the power of Python in the Artificial
+							Intelligence World. <br />
+							The funniest thing is that when people hear the term
+							artificial intelligence, they usually thing it's a
+							robot. Artificial Intelligence is based on the
+							principle that human intelligence can be defined in
+							a way that a machine can easily mimic it and execute
+							tasks from the most simple to the complex level.
+						</div>
+					</div>
+					<div>
+						<img src="py_djang.jpg" />
+
+						<div id="ip" class="change_color">
+							I'm sure you will think about web development as
+							well. And the fact remains that Python Language can
+							also be manipuleted in the web developing world.
+							Quite a number of applications known as frameworks
+							can be manipulated simultanously with Python but
+							DJANGO is considered the most porpular among the
+							multitude. <br />
+							Django is a high-level Python web framework that
+							encourages rapid development and clean pragmatic
+							design built by experienced developers.
+						</div>
+					</div>
+				</section>
+			</article>
+
+			<section id="ip" class="matriculation">
+				<h2 class="mat change_color">MATRICULATION!!!</h2>
+				<div id="matric_grid">
+					<section class="change_color">
+						<b> <span class="big_c">C</span>ongratulations </b> to
+						the newly matriculated students. This is a memorable day
+						to rejoice and celebrate for the great privilege granted
+						by the designer of heaven and earth to be among the
+						students of the university, as numerous individuals are
+						looking forward to seeking opportunity of this kind.
+
+						<br />
+
+						This ceremony marks the official entry of every students
+						into the higher institution of learning and it is a
+						statutory gathering to finally admit the deserving and
+						qualified candidates who are fortunate to be offered
+						admission into this prestigious university where
+						academic excellence with Godliness and core value is
+						being enforced.
+						<span class="today-mat">
+							Today's Matriculation ceremony is very significant
+							because it provides opportunity for students to
+							pledge their allegiance to the authority of the
+							university through the administration of
+							Matriculation oath.
+							<br />
+
+							As part of the matriculated significant, every
+							student is entitled to all right and privilege
+							recognzed by the school authority which include but
+							not limited to; right to access the information in
+							the library, enjoyment of all teaching and learning
+							facilities like I.C.T, participation in sport
+							activities such as football, basket ball, table
+							tennis e.t.c as well as the right to report any
+							criminal activity to the cheif security officer.
+						</span>
+					</section>
+
+					<!--   MATRICULATION  GALLERY   -->
+					<section class="mat-section">
+						<div id="gallery">
+							<div class="albom">
+								<div
+									id="play_pause"
+									onclick="play_pause_func()"
+								></div>
+
+								<div class="caption_holder">
+									<p id="caption_text" class="animate"></p>
+								</div>
+
+								<!--Image Holder-->
+
+								<div class="image_holder">
+									<img src="mat1.jpg" />
+									<p class="text">
+										Make Hay While The Sun Shines
+									</p>
+								</div>
+
+								<div class="image_holder">
+									<img src="mat2.jpg" />
+									<p class="text">Rejoice Always</p>
+								</div>
+
+								<div class="image_holder">
+									<img src="mat3.jpg" />
+									<p class="text">Center Of Latitude</p>
+								</div>
+
+								<div class="image_holder">
+									<img src="mat4.jpg" />
+									<p class="text">Latmed On Point</p>
+								</div>
+
+								<div class="image_holder">
+									<img src="mat5.jpg" />
+									<p class="text">Time Waits For No One</p>
+								</div>
+
+								<div class="image_holder">
+									<img src="mat6.jpg" />
+									<p class="text">Fullness OF Joy</p>
+								</div>
+
+								<!--End Of Image Holder-->
+							</div>
+							<div id="dot-wrapper"></div>
+						</div>
+					</section>
+				</div>
+			</section>
+
+			<section id="stu_aff">
+				<h4 id="ip" class="change_color">
+					The Affairs Of Students Are To Be Acknowledged
+				</h4>
+				<br />
+				<section id="imp_per">
+					<div class="img-container">
+						<img src="sam.jpg" id="stu-aff-img" />
+					</div>
+
+					<br />
+					<p id="ip" class="ip-info change_color">
+						The representative of the 300 level computer science
+						students, in person of
+						<b> Comrade Mustapha Samsudeen.</b> An industrious
+						individual with a philosophical thought.
+					</p>
+				</section>
+
+				<br />
+				<div id="imp_per">
+					<div class="img-container">
+						<img src="yet.jpg" id="stu-aff-img" />
+					</div>
+					<p id="ip" class="ip-info change_color">
+						<b> Honorable Saadat Yetunde</b>, the treasurer of the
+						Educational student Association of Nigeria(ESAN). She is
+						a very assiduous representative of the department at the
+						ESAN level.
+					</p>
+				</div>
+				<br />
+				<div id="imp_per">
+					<div class="img-container">
+						<img src="mar.jpg" id="stu-aff-img" />
+					</div>
+
+					<p id="ip" class="ip-info change_color">
+						We have the couragous personnel also representing the
+						department at the ESAN level, in person of
+						<b> Senator Olanrewaju Mayowa </b> who is one of the law
+						makers at the union.
+					</p>
+				</div>
+				<br />
+				<div id="imp_per">
+					<div class="img-container">
+						<img src="tim.jpg" id="stu-aff-img" />
+					</div>
+					<br />
+					<p id="ip" class="ip-info change_color">
+						Here comes the representative of the 200 level students
+						as regarding the computer science department, in person
+						of
+						<b> Comrade Timmy Patrick.</b> He is a jovial type and
+						always view things in different perspectives.
+					</p>
+				</div>
+				<br />
+				<div id="imp_per">
+					<div class="img-container">
+						<img src="jer.jpg" id="stu-aff-img" />
+					</div>
+					<p id="ip" class="ip-info change_color">
+						<b> Comrade Popoola Jerry </b> is well-known to be the
+						representative of all 100 level students as far as
+						computer science is concerned. He is one of a kind and a
+						focus individual.
+					</p>
+				</div>
+
+				<div class="urgent_info change_color">
+					All students should be aware that the I.D Card as well as
+					the Lyad is now available for collection. It should also be
+					noted that another course has been added to the 200 level
+					courses with the course code of
+					<em>CUS 212</em> mainly for all science students.
+				</div>
+			</section>
+
+			<section id="gall_cont">
+				<!--   Gallery Begins   -->
+
+				<div id="gallery2">
+					<div class="albom2">
+						<div
+							id="play_pause2"
+							onclick="play_pause_func2()"
+						></div>
+						<div id="left" onclick="increase_slide2(-1)">
+							<i class="fa fa-reply" style="font-size: 20px"> </i>
+						</div>
+						<div id="right" onclick="increase_slide2(1)">
+							<i class="fa fa-share" style="font-size: 20px"> </i>
+						</div>
+
+						<div class="caption_holder2">
+							<p id="caption_text2" class="animate2"></p>
+						</div>
+
+						<!--Image Holder-->
+
+						<div class="image_holder2">
+							<img src="prog2.jpg" />
+							<p class="text2">The Aquaintance Of Python</p>
+						</div>
+
+						<div class="image_holder2">
+							<img src="pic1.jpg" />
+							<p class="text2">Programmer Appends Doctor</p>
+						</div>
+
+						<div class="image_holder2">
+							<img src="pic2.jpg" />
+							<p class="text2">At the Strong Room</p>
+						</div>
+
+						<div class="image_holder2">
+							<img src="pic3.jpg" />
+							<p class="text2">Fun To Be With</p>
+						</div>
+
+						<div class="image_holder2">
+							<img src="pic4.jpg" />
+							<p class="text2">
+								Center Of Gravity Of With The Bosses
+							</p>
+						</div>
+
+						<div class="image_holder2">
+							<img src="pic5.jpg" />
+							<p class="text2">Time Appends Latitude</p>
+						</div>
+
+						<div class="image_holder2">
+							<img src="pic6.jpg" />
+							<p class="text2">Time Is A Form Of Media</p>
+						</div>
+
+						<div class="image_holder2">
+							<img src="pic7.jpg" />
+							<p class="text2">Shuk Med With Time</p>
+						</div>
+
+						<div class="image_holder2">
+							<img src="pic8.jpg" />
+							<p class="text2">Jubilation Keeps One Lively</p>
+						</div>
+
+						<div class="image_holder2">
+							<img src="pic9.jpg" />
+							<p class="text2">Time Keeps Track With Media</p>
+						</div>
+
+						<!--End Of Image Holder-->
+					</div>
+					<div id="dot-wrapper2"></div>
+				</div>
+				<!--   Gallery Ends   -->
+
+				<section id="contact">
+					<form action="#">
+						<div>
+							<div>
+								<h3>Contact Form</h3>
+								<div class="inputs">
+									<i
+										class="fa fa-user-circle"
+										style="font-size: 25px"
+									>
+									</i>
+									<input
+										type="text"
+										name="name"
+										placeholder="Name In Full"
+										required
+									/>
+
+									<i
+										class="fa fa-envelope"
+										style="font-size: 25px"
+									>
+									</i>
+									<input
+										type="email"
+										name="email"
+										placeholder="Email Address"
+										required
+									/>
+
+									<i
+										class="fa fa-commenting"
+										style="font-size: 25px"
+									>
+									</i>
+									<textarea
+										rows="10"
+										placeholder="Message"
+									></textarea>
+								</div>
+								<div class="button">
+									<button>
+										<i class="fa fa-send"> </i>
+										<span>Send</span>
+									</button>
+								</div>
+
+								<aside class="chat">
+									<h4>OR CHAT US</h4>
+									<br />
+									<div>
+										<a
+											href="https://bit.ly/timmypatrickfacebook"
+										>
+											<i
+												class="fa fa-facebook"
+												style="font-size: 35px"
+											>
+											</i>
+										</a>
+										<a
+											href="https://bit.ly/timmypatrickwhatsappandgreetings"
+										>
+											<i
+												class="fa fa-whatsapp"
+												style="font-size: 35px"
+											>
+											</i>
+										</a>
+										<a
+											href="https://bit.ly/timmypatrickinstagram"
+										>
+											<i
+												class="fa fa-instagram"
+												style="font-size: 35px"
+											>
+											</i>
+										</a>
+										<a
+											href="https://bit.ly/timmypatricktelegram"
+										>
+											<i
+												class="fa fa-telegram"
+												style="font-size: 35px"
+											>
+											</i>
+										</a>
+									</div>
+								</aside>
+							</div>
+						</div>
+					</form>
+				</section>
+			</section>
+			<br />
+
+			<a href="#home">
+				<aside class="top">
+					<i class="fa fa-level-up" style="font-size: 30px"> </i>
+				</aside>
+			</a>
+		</main>
+
+		<footer>
+			<div>All Right Reserved</div>
+			<div>
+				<i class="fa fa-copyright" style="font-size: 20px"> </i>
+				<span>2020 Timmy Patrick</span>
+			</div>
+		</footer>
+
+		<script>
+			function my_animation() {
+				var typing_arr = new Typed("#animation", {
+					strings: [
+						"You're Welcome To The Computer Science Base",
+						"We Give The Latest Information About The Departmental Issues",
+						"Stay Tuned To Enjoy Our Hospitality",
+					],
+					typeSpeed: 50,
+					backSpeed: 50,
+					loop: true,
+				});
+			}
+			my_animation();
+
+			function open_nav() {
+				var my_nav = document.getElementById("nav_bar");
+				my_nav.style.width = "100%";
+			}
+
+			function close_nav() {
+				var my_nav = document.getElementById("nav_bar");
+				my_nav.style.width = "0%";
+			}
+
+			// The Toggle Animation
+
+			function to_toggle() {
+				var tog = document.getElementById("toggle");
+				var lab = document.querySelector("nav label");
+
+				tog.addEventListener("change", function () {
+					document.body.classList.toggle("transform");
+					if (lab.textContent == "Light Mode") {
+						lab.textContent = "Dark Mode";
+					} else {
+						lab.textContent = "Light Mode";
+					}
+				});
+			}
+			to_toggle();
+
+			// Matriculation Scripting Begins
+
+			var slide_index, slides, dot, dot_arr, text, dot_wrapper;
+			function gallery() {
+				slide_index = 0;
+				slides = document.querySelectorAll(".image_holder");
+				slides[slide_index].style.opacity = 1;
+				text = document.querySelector("#caption_text");
+				text.textContent =
+					slides[slide_index].querySelector(".text").innerText;
+				dot_arr = [];
+				dot_wrapper = document.getElementById("dot-wrapper");
+
+				for (var w = 0; w < slides.length; w++) {
+					dot = document.createElement("span");
+					dot_arr.push(dot);
+					dot_wrapper.append(dot);
+					dot.setAttribute("onclick", "to_move_slide(" + w + ")");
+				}
+				dot_arr[slide_index].classList.add("active");
+			}
+			gallery();
+
+			interval = null;
+			function set_timer() {
+				interval = setInterval(function () {
+					increase_slide(1);
+				}, 5000);
+			}
+			set_timer();
+
+			function increase_slide(add) {
+				to_move_slide(slide_index + add);
+			}
+
+			function to_move_slide(n) {
+				var present, future;
+				var move_slide = {
+					now: "",
+					will_come: "",
+				};
+
+				if (n > slide_index) {
+					if (n == slides.length) {
+						n = 0;
+					}
+
+					move_slide.now = "present_slide_go_left";
+					move_slide.will_come = "future_slide_come_left";
+				} else if (n < slide_index) {
+					if (n < 0) {
+						n = slides.length - 1;
+					}
+
+					move_slide.now = "present_slide_go_right";
+					move_slide.will_come = "future_slide_come_right";
+				}
+
+				if (n != slide_index) {
+					present = slides[slide_index];
+					future = slides[n];
+
+					for (var g = 0; g < slides.length; g++) {
+						slides[g].className = "image_holder";
+						slides[g].style.opacity = 0;
+						dot_arr[g].classList.remove("active");
+					}
+
+					present.classList.add(move_slide.now);
+					future.classList.add(move_slide.will_come);
+					dot_arr[n].classList.add("active");
+					slide_index = n;
+				}
+				text.style.display = "none";
+				text.textContent = slides[n].querySelector(".text").innerText;
+				text.style.display = "initial";
+			}
+
+			function play_pause_func() {
+				var target_play_pause = document.getElementById("play_pause");
+				if (interval == null) {
+					set_timer();
+					target_play_pause.style.backgroundPositionY = "0px";
+				} else {
+					clearInterval(interval);
+					interval = null;
+					target_play_pause.style.backgroundPositionY = "-34px";
+				}
+			}
+
+			// Gallery Scripting Begins
+
+			var slide_index2, slides2, dot2, dot_arr2, text2, dot_wrapper2;
+			function gallery2() {
+				slide_index2 = 0;
+				slides2 = document.querySelectorAll(".image_holder2");
+				slides2[slide_index2].style.opacity = 1;
+				text2 = document.querySelector("#caption_text2");
+				text2.textContent =
+					slides2[slide_index2].querySelector(".text2").innerText;
+				dot_arr2 = [];
+				dot_wrapper2 = document.getElementById("dot-wrapper2");
+
+				for (var w2 = 0; w2 < slides2.length; w2++) {
+					dot2 = document.createElement("span");
+					dot_arr2.push(dot2);
+					dot_wrapper2.append(dot2);
+					dot2.setAttribute("onclick", "to_move_slide2(" + w2 + ")");
+				}
+				dot_arr2[slide_index2].classList.add("active2");
+			}
+			gallery2();
+
+			interval2 = null;
+			function set_timer2() {
+				interval2 = setInterval(function () {
+					increase_slide2(1);
+				}, 5000);
+			}
+			set_timer2();
+
+			function increase_slide2(add2) {
+				to_move_slide2(slide_index2 + add2);
+			}
+
+			function to_move_slide2(n2) {
+				var present2, future2;
+				var move_slide2 = {
+					now2: "",
+					will_come2: "",
+				};
+
+				if (n2 > slide_index2) {
+					if (n2 == slides2.length) {
+						n2 = 0;
+					}
+
+					move_slide2.now2 = "present_slide_go_left2";
+					move_slide2.will_come2 = "future_slide_come_left2";
+				} else if (n2 < slide_index2) {
+					if (n2 < 0) {
+						n2 = slides2.length - 1;
+					}
+
+					move_slide2.now2 = "present_slide_go_right2";
+					move_slide2.will_come2 = "future_slide_come_right2";
+				}
+
+				if (n2 != slide_index2) {
+					present2 = slides2[slide_index2];
+					future2 = slides2[n2];
+
+					for (var g2 = 0; g2 < slides2.length; g2++) {
+						slides2[g2].className = "image_holder2";
+						slides2[g2].style.opacity = 0;
+						dot_arr2[g2].classList.remove("active2");
+					}
+
+					present2.classList.add(move_slide2.now2);
+					future2.classList.add(move_slide2.will_come2);
+					dot_arr2[n2].classList.add("active2");
+					slide_index2 = n2;
+				}
+				text2.style.display = "none";
+				text2.textContent =
+					slides2[n2].querySelector(".text2").innerText;
+				text2.style.display = "initial";
+			}
+
+			function play_pause_func2() {
+				var target_play_pause2 = document.getElementById("play_pause2");
+				if (interval2 == null) {
+					set_timer2();
+					target_play_pause2.style.backgroundPositionY = "0px";
+				} else {
+					clearInterval(interval2);
+					interval2 = null;
+					target_play_pause2.style.backgroundPositionY = "-34px";
+				}
+			}
+		</script>
+	</body>
+</html>
